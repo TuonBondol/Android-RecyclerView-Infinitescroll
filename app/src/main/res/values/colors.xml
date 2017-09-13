@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default color -->
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <string name="color_black_transparent">#70000000</string>
+    <color name="default_divider_color">#6B6C6B</color>
+
+    <!-- Sign In Screen -->
+    <color name="sign_in_button_background">#EEEEEE</color>
+    <color name="forgot_password">#42A5F5</color>
+
+    <!-- Splash Screen -->
+    <color name="splash_screen_background">#000000</color>
+
+    <!-- Top Screen -->
+    <color name="top_screen_background">#A3A29D</color>
+    <color name="edit_text_background">#575754</color>
+    <color name="hint_color">#868684</color>
+</resources>

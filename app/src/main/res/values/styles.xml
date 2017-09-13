@@ -1,0 +1,77 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorControlNormal">@android:color/white</item>
+    </style>
+
+    <!-- Sign In Screen -->
+    <style name="SignInScreenStyle">
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingStart">@dimen/dimen_0dp</item>
+        <item name="android:paddingEnd">@dimen/dimen_8dp</item>
+        <item name="android:textColorHint">@color/hint_color</item>
+        <item name="android:layout_height">46dp</item>
+        <item name="android:layout_marginStart">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_16dp</item>
+        <item name="android:inputType">textEmailAddress</item>
+        <item name="android:background">@color/edit_text_background</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+    <style name="SplashScreenTitle1Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:text">@string/splash_screen_title_1</item>
+        <item name="android:textSize">@dimen/text_size_45sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:paddingStart">@dimen/dimen_2dp</item>
+        <item name="android:paddingEnd">@dimen/dimen_2dp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <!-- Top Screen -->
+    <style name="EditTextBackground">
+        <item name="android:paddingTop">@dimen/dimen_10dp</item>
+        <item name="android:paddingBottom">@dimen/dimen_4dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/edit_text_background</item>
+    </style>
+
+    <style name="ImageCircleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_4dp</item>
+        <item name="android:src">@drawable/ic_image_circle_white</item>
+        <item name="android:contentDescription">@string/image_content_description</item>
+    </style>
+
+    <style name="SignInScreenButtonStyle">
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColorHint">@color/hint_color</item>
+        <item name="android:layout_height">46dp</item>
+        <item name="android:layout_marginStart">@dimen/dimen_32dp</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_32dp</item>
+        <item name="android:inputType">textEmailAddress</item>
+        <item name="android:background">@drawable/sign_in_edit_text_boarder</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+    <style name="TopScreenViewDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:minHeight">@dimen/dimen_120dp</item>
+    </style>
+</resources>

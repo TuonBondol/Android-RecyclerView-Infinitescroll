@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">RecyclerViewInfiniteScroll</string>
+
+    <!-- Internet Connection -->
+    <string name="no_internet_connection">No Internet Connection!</string>
+</resources>

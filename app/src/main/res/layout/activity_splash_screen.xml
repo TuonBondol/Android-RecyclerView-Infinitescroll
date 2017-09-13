@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_screen_background"
+    android:orientation="vertical"
+    tools:context="nanita.entr.android.splashscreen.SplashScreenActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2" />
+
+    <TextView
+        style="@style/SplashScreenTitle1Style" />
+
+    <TextView
+        android:layout_marginTop="@dimen/dimen_32dp"
+        style="@style/SplashScreenTitle1Style"
+        android:text="@string/splash_screen_title_2"
+        android:textSize="@dimen/text_size_20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+</LinearLayout>

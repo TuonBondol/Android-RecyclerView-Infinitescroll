@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Android-RecyclerView-Infinitescroll.iml" filepath="$PROJECT_DIR$/Android-RecyclerView-Infinitescroll.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FineWork-ENTR-Android.iml" filepath="$PROJECT_DIR$/FineWork-ENTR-Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/coremvpkotlinandroid.iml" filepath="$PROJECT_DIR$/coremvpkotlinandroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recyclerviewinfinitescroll/recyclerviewinfinitescroll.iml" filepath="$PROJECT_DIR$/recyclerviewinfinitescroll/recyclerviewinfinitescroll.iml" />
+    </modules>
+  </component>
+</project>
