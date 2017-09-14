@@ -3,7 +3,7 @@ package com.tuonbondol.recyclerviewinfinitescroll
 import android.content.Context
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
-import nanita.entr.android.utils.isNetworkConnected
+import com.tuonbondol.networkutil.isNetworkConnected
 import org.jetbrains.anko.toast
 
 /****
