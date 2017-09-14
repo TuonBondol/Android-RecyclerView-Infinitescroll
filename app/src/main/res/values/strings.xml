@@ -6,7 +6,7 @@
     <string name="splash_screen_title_1">TUON BONDOL</string>
     <string name="splash_screen_title_2">https://github.com/BondolTuon/</string>
     <!-- Homescreen -->
-    <string name="home">Home</string>
+    <string name="home">Infinite RecyclerView</string>
 
     <!-- Sign In Screen -->
     <string name="email">Email</string>

@@ -7,7 +7,7 @@ import nanita.entr.android.model.response.HomeResponse
 
 /***
  *
- * @author Nanita Tech on 9/14/2017.
+ * @author TUON BONDOL
  *
  */
 

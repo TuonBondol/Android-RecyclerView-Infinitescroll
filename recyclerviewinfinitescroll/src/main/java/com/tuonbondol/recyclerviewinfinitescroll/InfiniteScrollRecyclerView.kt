@@ -8,7 +8,7 @@ import org.jetbrains.anko.toast
 
 /****
  *
- * @author TUON BONDOL Date: 9/1/17.
+ * @author TUON BONDOL
  *
  */
 

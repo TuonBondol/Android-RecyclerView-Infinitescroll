@@ -5,7 +5,7 @@ import android.net.ConnectivityManager
 
 /****
  *
- * @author TUON BONDOL Date: 9/1/17.
+ * @author TUON BONDOL
  *
  */
 

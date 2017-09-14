@@ -13,45 +13,22 @@ import org.jetbrains.anko.toast
 
 /****
  *
- * @author TUON BONDOL Date: 9/1/17.
+ * @author TUON BONDOL
  *
  */
 
 class HomeActivity : BaseActivity(), HomeInterface.View, InfiniteScrollRecyclerView.RecyclerViewAdapterCallback, HomeRecyclerViewAdapter.HomeItemClick {
-    override fun responseError(errorObjects: Any) {
-        homeAdapter?.setLoadingStatus(true)
-    }
-
-    override fun HomeResponseInfiniteSuccess(homeData: HomeResponse) {
-        homeAdapter?.setLoadingStatus(true)
-        foodData!!.removeAt(foodData!!.size - 1)
-        foodData?.addAll(homeData.Foods)
-        homeAdapter?.notifyDataSetChanged()
-    }
-
-    val mLoadingData = Foods(loadingStatus = true)
-
-    override fun ItemClickCallback(position: Int) {
-        toast("Item Clicked Position $position")
-    }
-
-    override fun onLoadMoreData() {
-        foodData?.add(mLoadingData)
-        homeAdapter?.notifyDataSetChanged()
-        mHomePresenter?.requestDataFromServer(true)
-    }
 
     var homeAdapter: HomeRecyclerViewAdapter? = null
     var mHomePresenter: HomeInterface.Presenter? = null
     var foodData: ArrayList<Foods>? = ArrayList<Foods>()
+    val mLoadingData = Foods(loadingStatus = true)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         onSetUpHomeToolbar(resources.getString(R.string.home))
-
-        onSetUpRecyclerView()
 
         setPresenter(HomePresenter(this))
     }
@@ -72,7 +49,25 @@ class HomeActivity : BaseActivity(), HomeInterface.View, InfiniteScrollRecyclerV
 
     override fun HomeResponseSuccess(homeData: HomeResponse) {
         foodData = homeData.Foods
-        homeAdapter?.onUpdateData(foodData)
+        onSetUpRecyclerView()
+    }
+
+    override fun HomeResponseInfiniteSuccess(homeData: HomeResponse) {
+        homeAdapter?.setLoadingStatus(true)
+        foodData!!.removeAt(foodData!!.size - 1)
+        foodData?.addAll(homeData.Foods)
+        homeAdapter?.notifyDataSetChanged()
+    }
+
+    override fun responseError(errorObjects: Any) {
+        toast("Response Error $errorObjects")
+        homeAdapter?.setLoadingStatus(true)
+    }
+
+    override fun onLoadMoreData() {
+        foodData?.add(mLoadingData)
+        homeAdapter?.notifyDataSetChanged()
+        mHomePresenter?.requestDataFromServer(true)
     }
 
     fun onSetUpRecyclerView() {
@@ -86,5 +81,9 @@ class HomeActivity : BaseActivity(), HomeInterface.View, InfiniteScrollRecyclerV
                 mItemClickCallback = this)
         rvListData.adapter = homeAdapter
         homeAdapter?.setLoadingStatus(true)
+    }
+
+    override fun ItemClickCallback(position: Int) {
+        toast("Item Clicked Position $position")
     }
 }

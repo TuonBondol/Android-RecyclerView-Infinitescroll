@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="nanita.entr.android.home.HomeActivity">
 
     <include layout="@layout/default_home_toolbar_layout" />
 
-    <include
-        layout="@layout/default_recycler_view_layout"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvListData"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/tbHome" />
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:scrollbars="vertical" />
 
-</RelativeLayout>
+</LinearLayout>
