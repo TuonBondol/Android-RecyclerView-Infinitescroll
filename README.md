@@ -24,7 +24,7 @@ Step 2
 
 ```
 dependencies {
-	         compile 'com.github.BondolTuon:Android-RecyclerView-Infinitescroll:V1.0.1'
+	         compile 'com.github.BondolTuon:Android-RecyclerView-Infinitescroll:1.0.2'
 	}
 ```
 
