@@ -24,7 +24,7 @@ Step 2
 
 ```
 dependencies {
-	         compile 'com.github.BondolTuon:Android-RecyclerView-Infinitescroll:1.0.2'
+	         compile 'com.github.BondolTuon:Android-RecyclerView-Infinitescroll:1.0.3'
 	}
 ```
 
@@ -109,7 +109,7 @@ fun onSetUpRecyclerView() {
 ## Min SDK Version
 
 ```
-Support Min Sdk version >= 21
+Support Min Sdk version >= 16
 
 ```
 
