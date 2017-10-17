@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="nanita.entr.android.home.HomeActivity">
+    tools:context="speedev.android.recyclerviewinfinitescroll.home.HomeActivity">
 
     <include layout="@layout/default_home_toolbar_layout" />
 

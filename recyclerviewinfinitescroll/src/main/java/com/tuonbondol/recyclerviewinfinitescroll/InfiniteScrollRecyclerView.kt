@@ -12,7 +12,10 @@ import org.jetbrains.anko.toast
  *
  */
 
-class InfiniteScrollRecyclerView(val mContext: Context, val mRecyclerView: RecyclerView, val mLayoutManager: LinearLayoutManager, val mRecyclerViewAdapterCallback: RecyclerViewAdapterCallback) {
+class InfiniteScrollRecyclerView(
+        val mContext: Context, val mRecyclerView: RecyclerView,
+        val mLayoutManager: LinearLayoutManager,
+        val mRecyclerViewAdapterCallback: RecyclerViewAdapterCallback) {
 
     var mPastVisibleItems: Int = 0
     var mVisibleItemCount: Int = 0
@@ -20,10 +23,10 @@ class InfiniteScrollRecyclerView(val mContext: Context, val mRecyclerView: Recyc
     var mInfiniteLoadingStatus: Boolean = false
 
     init {
-        InfiniteRecyclerView()
+        infiniteRecyclerView()
     }
 
-    private fun InfiniteRecyclerView() {
+    private fun infiniteRecyclerView() {
         mRecyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {
             override fun onScrolled(recyclerView: RecyclerView?, dx: Int, dy: Int) {
                 if (dy > 0) {

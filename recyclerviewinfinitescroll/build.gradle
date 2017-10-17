@@ -4,10 +4,10 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    buildToolsVersion "$buildToolsVersionCode"
 
     defaultConfig {
-        minSdkVersion 21
+        minSdkVersion 16
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -37,6 +37,6 @@ dependencies {
     // Coroutine listeners for Anko Layouts
     compile "org.jetbrains.anko:anko-sdk25-coroutines:$anko_version"
     compile "org.jetbrains.anko:anko-appcompat-v7-coroutines:$anko_version"
-    compile 'com.github.BondolTuon:NetworkUtil:V1.0.0'
+    compile 'com.github.BondolTuon:NetworkUtil:1.0.2'
     testCompile 'junit:junit:4.12'
 }

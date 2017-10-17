@@ -6,8 +6,8 @@ android {
     compileSdkVersion 26
     buildToolsVersion "$buildToolsVersionCode"
     defaultConfig {
-        applicationId "core.mvp.kotlinandroid"
-        minSdkVersion 21
+        applicationId "speedev.android.recyclerviewinfinitescroll"
+        minSdkVersion 16
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -36,7 +36,7 @@ dependencies {
     compile 'com.squareup.retrofit2:retrofit:2.2.0'
     compile 'com.squareup.retrofit2:converter-gson:2.2.0'
     compile 'com.squareup.okhttp3:logging-interceptor:3.3.1'
-    compile 'com.github.BondolTuon:Android-RecyclerView-Infinitescroll:V1.0.1'
     compile 'com.squareup.picasso:picasso:2.5.2'
     testCompile 'junit:junit:4.12'
+    compile project(':recyclerviewinfinitescroll')
 }
