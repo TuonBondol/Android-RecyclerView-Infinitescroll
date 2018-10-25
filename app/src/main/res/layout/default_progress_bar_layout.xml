@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/rlProgressBar"
     android:layout_width="match_parent"
     android:visibility="gone"
     android:layout_height="match_parent">
 
-    <ProgressBar
+    <androidx.core.widget.ContentLoadingProgressBar
         android:layout_width="@dimen/progress_bar_width_height"
         android:layout_height="@dimen/progress_bar_width_height"
         android:layout_centerInParent="true" />
 
-</RelativeLayout>
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>

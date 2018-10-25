@@ -1,14 +1,14 @@
 package speedev.android.recyclerviewinfinitescroll.home
 
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.tuonbondol.recyclerviewinfinitescroll.InfiniteScrollRecyclerView
 import speedev.android.recyclerviewinfinitescroll.BaseActivity
 import kotlinx.android.synthetic.main.default_home_toolbar_layout.*
 import kotlinx.android.synthetic.main.default_recycler_view_layout.*
+import org.jetbrains.anko.toast
 import speedev.android.recyclerviewinfinitescroll.model.response.Foods
 import speedev.android.recyclerviewinfinitescroll.model.response.HomeResponse
-import org.jetbrains.anko.toast
 import speedev.android.recyclerviewinfinitescroll.R
 
 /****

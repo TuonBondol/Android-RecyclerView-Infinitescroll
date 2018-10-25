@@ -1,8 +1,8 @@
 package com.tuonbondol.recyclerviewinfinitescroll
 
 import android.content.Context
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.tuonbondol.networkutil.isNetworkConnected
 import org.jetbrains.anko.toast
 
@@ -28,7 +28,7 @@ class InfiniteScrollRecyclerView(
 
     private fun infiniteRecyclerView() {
         mRecyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {
-            override fun onScrolled(recyclerView: RecyclerView?, dx: Int, dy: Int) {
+            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                 if (dy > 0) {
                     mVisibleItemCount = mRecyclerView.childCount
                     mTotalItemCount = mLayoutManager.itemCount

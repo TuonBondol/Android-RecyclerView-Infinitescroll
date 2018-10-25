@@ -1,11 +1,11 @@
 package speedev.android.recyclerviewinfinitescroll.home
 
 import android.content.Context
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import com.tuonbondol.recyclerviewinfinitescroll.InfiniteScrollRecyclerView
 import kotlinx.android.synthetic.main.my_snack_row_layout.view.*
@@ -30,11 +30,11 @@ class HomeRecyclerViewAdapter(val mContext: Context, mRecyclerView: RecyclerView
         mInfiniteScrollRecyclerView = InfiniteScrollRecyclerView(mContext, mRecyclerView, mLayoutManager, mRecyclerViewAdapterCallback)
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         if (viewType == holderRow) {
-            return ViewHolder(LayoutInflater.from(parent?.context).inflate(R.layout.my_snack_row_layout, parent, false))
+            return ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.my_snack_row_layout, parent, false))
         }
-        return ViewHolder(LayoutInflater.from(parent?.context).inflate(R.layout.infinite_loading_progress_bar_layout, parent, false))
+        return ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.infinite_loading_progress_bar_layout, parent, false))
     }
 
     override fun getItemCount(): Int = mDataList!!.size
@@ -46,17 +46,17 @@ class HomeRecyclerViewAdapter(val mContext: Context, mRecyclerView: RecyclerView
         }
     }
 
-    override fun onBindViewHolder(holder: ViewHolder?, position: Int) {
-        if (holder?.itemViewType == holderRow) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        if (holder.itemViewType == holderRow) {
             holder.bind()
         }
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind() {
-            Picasso.with(itemView.context).load(mDataList!![adapterPosition].ImageUrl).into(itemView.ivFoodProfile)
+            Picasso.get().load(mDataList!![adapterPosition].ImageUrl).into(itemView.ivFoodProfile)
 
-            itemView.setOnClickListener {
+            itemView.setOnClickListener { _ ->
                 mItemClickCallback?.let {
                     mItemClickCallback.itemClickCallback(adapterPosition)
                 }

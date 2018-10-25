@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="200dp">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/ivFoodProfile"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="250dp"
         android:adjustViewBounds="true"
-        android:background="@android:color/holo_red_dark"
         android:contentDescription="@string/image_content_description"
         android:scaleType="centerCrop" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#C6C6C6" />
 </LinearLayout>

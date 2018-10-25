@@ -1,8 +1,7 @@
 package speedev.android.recyclerviewinfinitescroll
 
-import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.default_backpress_toolbar_layout.*
 
 /****
